@@ -6,7 +6,8 @@ export default () => (
   <div>
     <Layout>
       <Container size={1000}>
-        <p>Hello world!</p>
+        <h1>Cleft Templar</h1>
+        <p>A game.</p>
       </Container>
     </Layout>
   </div>
