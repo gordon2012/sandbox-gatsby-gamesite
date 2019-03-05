@@ -35,7 +35,6 @@ export default props => {
         <div
           css={css`
             flex: 1;
-            padding: 1em;
           `}
         >
           {props.children}

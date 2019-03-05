@@ -10,7 +10,7 @@ const theme = {
 export default () => (
   <div>
     <Layout theme={theme}>
-      <Container size={1000}>
+      <Container s={1000} p="0 1em">
         <h1>Cleft Templar</h1>
         <p>A game.</p>
       </Container>

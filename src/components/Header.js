@@ -8,10 +8,9 @@ export default () => (
   <div
     css={css`
       background: #333;
-      padding: 1em;
     `}
   >
-    <Container size={1000}>
+    <Container s={1000} p="1em">
       <Link to="/">Home</Link> &nbsp;
       <Link to="/cleft-templar">Cleft Templar</Link>
     </Container>

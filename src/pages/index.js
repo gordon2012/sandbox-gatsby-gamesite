@@ -5,7 +5,7 @@ import Container from '../components/Container';
 export default () => (
   <div>
     <Layout>
-      <Container size={1000}>
+      <Container s={1000} p="0 1em">
         <p>Hello world!</p>
       </Container>
     </Layout>
