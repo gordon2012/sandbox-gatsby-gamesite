@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Box } from '@rebass/emotion';
+import { Flex, Box, Image } from '@rebass/emotion';
 
 import Layout from '../components/Layout';
 import Container from '../components/Container';
@@ -26,7 +26,7 @@ export default () => (
 
         <Flex>
           <Box width={1 / 2} p={2}>
-            <img
+            <Image
               src="https://source.unsplash.com/eSNjFDbw_i4/640x480"
               alt="Reticulated Splines"
             />
@@ -58,7 +58,7 @@ export default () => (
             </ul>
           </Box>
           <Box width={1 / 2} p={2}>
-            <img
+            <Image
               src="https://source.unsplash.com/weekly?water/640x480"
               alt="Amazing Vigilance"
             />
@@ -67,7 +67,7 @@ export default () => (
 
         <Flex>
           <Box width={1 / 2} p={2}>
-            <img
+            <Image
               src="https://source.unsplash.com/weekly?fire/640x480"
               alt="Splendid! Such Wow"
             />
@@ -86,6 +86,25 @@ export default () => (
 
         <Box py={4}>
           <Video src="hA6hldpSTF8" ratio={53.4} />
+        </Box>
+
+        <Box px={[5, 0]}>
+          {[
+            'urioWbjYDOU',
+            'vIAim1sjf9g',
+            'OXv_lF1PFiY',
+            '2QolB3aMw14',
+            'VJtr6V6US7M',
+            'wKbuplZNaMY',
+          ].map(e => (
+            <Image
+              key={e}
+              width={[1, 1 / 3]}
+              px={1}
+              mb={1}
+              src={`https://source.unsplash.com/${e}/800x450`}
+            />
+          ))}
         </Box>
       </Container>
     </Layout>

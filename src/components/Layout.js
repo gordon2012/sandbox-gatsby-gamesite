@@ -29,10 +29,6 @@ export default props => {
             a {
               color: white;
             }
-            img {
-              height: auto;
-              width: 100%;
-            }
             .text-center {
               text-align: center;
             }
