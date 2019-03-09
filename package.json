@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
+    "@rebass/emotion": "^3.0.0",
     "emotion-theming": "^10.0.7",
     "gatsby": "^2.1.19",
     "gatsby-plugin-emotion": "^4.0.4",

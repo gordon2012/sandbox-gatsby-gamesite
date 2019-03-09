@@ -1,9 +1,10 @@
 import React from 'react';
 
+import { Flex, Box } from '@rebass/emotion';
+
 import Layout from '../components/Layout';
 import Container from '../components/Container';
 import Hero from '../components/Hero';
-import Columns from '../components/Columns';
 
 const theme = {
   backgroundColor: 'black',
@@ -23,34 +24,65 @@ export default () => (
 
         <h2 className="text-center">Fall into the Shadows</h2>
 
-        <Columns cols={[
-          <img src="https://source.unsplash.com/eSNjFDbw_i4/640x480" alt="Reticulated Splines"/>,
-          <div>
+        <Flex>
+          <Box width={1 / 2} p={2}>
+            <img
+              src="https://source.unsplash.com/eSNjFDbw_i4/640x480"
+              alt="Reticulated Splines"
+            />
+          </Box>
+          <Box width={1 / 2} p={2}>
             <h3>Reticulated Splines</h3>
-            <p>Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.</p>
-          </div>
-        ]}/>
+            <p>
+              Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum,
+              lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum,
+              lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum,
+              lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum,
+              lorem ipsum, lorem ipsum, lorem ipsum.
+            </p>
+          </Box>
+        </Flex>
 
-        <Columns cols={[
-          <div>
+        <Flex>
+          <Box width={1 / 2} p={2}>
             <h3>Amazing Vigilance</h3>
-            <p>Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.</p>
+            <p>
+              Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum,
+              lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum,
+              lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.
+            </p>
             <ul>
               <li>Courage</li>
               <li>Wisdom</li>
               <li>Power</li>
             </ul>
-          </div>,
-          <img src="https://source.unsplash.com/weekly?water/640x480" alt="Amazing Vigilance"/>
-        ]}/>
+          </Box>
+          <Box width={1 / 2} p={2}>
+            <img
+              src="https://source.unsplash.com/weekly?water/640x480"
+              alt="Amazing Vigilance"
+            />
+          </Box>
+        </Flex>
 
-        <Columns cols={[
-          <img src="https://source.unsplash.com/weekly?fire/640x480" alt="Splendid! Such Wow"/>,
-          <div>
+        <Flex>
+          <Box width={1 / 2} p={2}>
+            <img
+              src="https://source.unsplash.com/weekly?fire/640x480"
+              alt="Splendid! Such Wow"
+            />
+          </Box>
+          <Box width={1 / 2} p={2}>
             <h3>Splendid! Such Wow</h3>
-            <p>Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum.</p>
-          </div>
-        ]}/>
+            <p>
+              Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum,
+              lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum,
+              lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum,
+              lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum,
+              lorem ipsum, lorem ipsum, lorem ipsum.
+            </p>
+          </Box>
+        </Flex>
       </Container>
     </Layout>
   </div>
