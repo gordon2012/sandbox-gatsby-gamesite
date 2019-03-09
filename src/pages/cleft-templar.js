@@ -1,10 +1,10 @@
 import React from 'react';
-
 import { Flex, Box } from '@rebass/emotion';
 
 import Layout from '../components/Layout';
 import Container from '../components/Container';
 import Hero from '../components/Hero';
+import Video from '../components/Video';
 
 const theme = {
   backgroundColor: 'black',
@@ -83,6 +83,10 @@ export default () => (
             </p>
           </Box>
         </Flex>
+
+        <Box py={4}>
+          <Video src="hA6hldpSTF8" ratio={53.4} />
+        </Box>
       </Container>
     </Layout>
   </div>
