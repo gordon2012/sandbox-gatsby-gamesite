@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Box, Image, Heading, Text } from '@rebass/emotion';
+import { Flex, Box, Image, Heading, Text, Link } from '@rebass/emotion';
 
 import Layout from '../components/Layout';
 import Container from '../components/Container';
@@ -159,6 +159,27 @@ export default () => (
             </Box>
           ))}
         </Flex>
+
+        <Flex flexWrap="wrap" bgx="magenta" p={1} mt={4}>
+          <Box width={[1, 1 / 2]} bgx="red" p={1}>
+            <Heading>Some Rad Tunes</Heading>
+            <Text my={2}>
+              Get pumped while slaughtering your foes with a soundtrack worthy
+              of the god of thunder.
+            </Text>
+          </Box>
+          <Box width={[1, 1 / 2]} bgx="lime" p={1}>
+            <Image src="https://source.unsplash.com/JCYdysf3d5Q/800x300" />
+          </Box>
+        </Flex>
+        <Text className="text-center" mt={2} mb={3}>
+          Purchase the Official Soundtrack
+        </Text>
+        <Box width={[1, 1 / 2]} mx="auto">
+          <Link href="https://google.com">
+            <Image src="https://source.unsplash.com/9zxZeisipcE/800x200" />
+          </Link>
+        </Box>
       </Container>
     </Layout>
   </div>
