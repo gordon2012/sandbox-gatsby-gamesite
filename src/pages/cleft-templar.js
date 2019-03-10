@@ -5,11 +5,14 @@ import Layout from '../components/Layout';
 import Container from '../components/Container';
 import Hero from '../components/Hero';
 import Video from '../components/Video';
+import Carousel from '../components/Carousel';
 
 const theme = {
   backgroundColor: 'black',
   color: 'white',
 };
+
+const unsplash = (id, size) => `https://source.unsplash.com/${id}/${size}`;
 
 export default () => (
   <div>
@@ -160,15 +163,15 @@ export default () => (
           ))}
         </Flex>
 
-        <Flex flexWrap="wrap" bgx="magenta" p={1} mt={4}>
-          <Box width={[1, 1 / 2]} bgx="red" p={1}>
+        <Flex flexWrap="wrap" p={1} mt={4}>
+          <Box width={[1, 1 / 2]} p={1}>
             <Heading>Some Rad Tunes</Heading>
             <Text my={2}>
               Get pumped while slaughtering your foes with a soundtrack worthy
               of the god of thunder.
             </Text>
           </Box>
-          <Box width={[1, 1 / 2]} bgx="lime" p={1}>
+          <Box width={[1, 1 / 2]} p={1}>
             <Image src="https://source.unsplash.com/JCYdysf3d5Q/800x300" />
           </Box>
         </Flex>
@@ -180,6 +183,21 @@ export default () => (
             <Image src="https://source.unsplash.com/9zxZeisipcE/800x200" />
           </Link>
         </Box>
+
+        <Carousel
+          mt={6}
+          images={[
+            'K9WKqYj55E0',
+            'ADWxmGXCitw',
+            'Pnvqz3Be90w',
+            'urioWbjYDOU',
+            'vIAim1sjf9g',
+            'OXv_lF1PFiY',
+            '2QolB3aMw14',
+            'VJtr6V6US7M',
+            'wKbuplZNaMY',
+          ].map(id => unsplash(id, '1200x800'))}
+        />
       </Container>
     </Layout>
   </div>
