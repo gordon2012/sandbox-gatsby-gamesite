@@ -29,8 +29,14 @@ export default props => {
             a {
               color: white;
             }
+            button {
+              cursor: pointer;
+            }
             .text-center {
               text-align: center;
+            }
+            .text-uppercase {
+              text-transform: uppercase;
             }
           `}
         />

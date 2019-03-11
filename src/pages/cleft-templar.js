@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Box, Image, Heading, Text, Link } from '@rebass/emotion';
+import { Flex, Box, Image, Heading, Text, Link, Button } from '@rebass/emotion';
 
 import Layout from '../components/Layout';
 import Container from '../components/Container';
@@ -198,6 +198,33 @@ export default () => (
             'wKbuplZNaMY',
           ].map(id => unsplash(id, '1200x800'))}
         />
+
+        <Box bgx="magenta" p={2} mt={4}>
+          <Heading className="text-center" bgx="red" py={4}>
+            Check out our Merchandise
+          </Heading>
+          <Flex flexWrap="wrap">
+            {[
+              {img: 'UoNO74xD-JA', copy: 'More plush than you can shake a tentacle at!', button: 'browse cool merch!'},
+              {img: '84n7c9cLEKM', copy: 'Cloth armor, hand crafted by mechanical dwarves.', button: 'check out the t-shirts'},
+              {img: 'm4uwUH3UiHs', copy: 'Scary costumes that will frighten small children.', button: 'Piss off, ghost!'}].map(e => (
+              <Box
+                key={e.id}
+                className="text-center"
+                bgx="magenta"
+                width={[1, 1/3]}
+                p={2} pb={4}
+              >
+                <Image src={unsplash(e.img, '1200x400')}/>
+                <Text fontWeight="bold" p={3}>{e.copy}</Text>
+                <Link href="https://google.com">
+                  <Button className="text-uppercase" px={4} py={3} borderRadius={100}>{e.button}</Button>
+                </Link>
+              </Box>
+            ))}
+          </Flex>
+        </Box>
+
       </Container>
     </Layout>
   </div>
